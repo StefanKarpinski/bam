@@ -1,0 +1,7 @@
+/bam
+/*.tsv
+/*.idx
+/*.dSYM
+/cmph-1.0
+/libmicrohttpd-0.9.3
+/urls.txt
