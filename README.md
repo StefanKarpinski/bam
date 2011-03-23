@@ -34,7 +34,14 @@ Bam is fast and simple. It mmaps the data and then builds a minimum perfect hash
   * <b>Throughput:</b> in local load testing, bam easily manages to serve 11k requests per second, which is about what servers like memcache do. The super-low request latency helps here, but the server is also multithreaded, using one persistent kernel thread per core and a select loop within each kernel thread. There's no locking to worry about because once the data is loaded it never changes.
   * <b>Memory:</b> it's very memory-efficient — the raw TSV format is actually pretty compact; pivoting the data out into relational form usually causes about an order of magnitude inflation of the data. The only other data structures it needs are the hash data stucture, which is about 2 bits per key value, and is therefore negligible, and a table of offsets into the mmapped data, which takes 8 bytes per key-value pair.
 
+
 Name
 ----
 
 What does the name stand for? Nothing. I don't do acronyms. It's called that because you have data — and bam! — you're already serving it.
+
+
+Sponsorship
+-----------
+
+This code is sponsored by Etsy, Inc. my employer. We're not using it as a production server, and the software is provided AS-IS with no implied or explicit warranty. Etsy is just cool enough to let me write code like this, use it for work purposes, and open source it.
