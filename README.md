@@ -39,9 +39,3 @@ Name
 ----
 
 What does the name stand for? Nothing. I don't do acronyms. It's called that because you have data — and bam! — you're already serving it.
-
-
-Sponsorship
------------
-
-This code is sponsored by Etsy, Inc. my employer. We're not using it as a production server, and the software is provided AS-IS with no implied or explicit warranty. Etsy is just cool enough to let me write code like this, use it for work purposes, and open source it.
